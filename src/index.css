@@ -1,0 +1,233 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.titulo{
+  padding: 4rem 0;
+  background-color: red;
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+   .titulo{
+    padding: 5rem 0;
+    font-size: 4rem;
+   }
+}
+.contenedor{
+  max-width: 90rem;
+  margin: 5rem auto;
+  width: 90%;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+   .flex{
+    display: flex;
+    flex-direction: column;
+   }
+}
+.formulario{
+  display: block;
+}
+@media (min-width: 768px) {
+  .formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+}
+.input-styles{
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #a09d9d;
+}
+label{
+  font-weight: 700;
+}
+.btn-submit{
+  padding: 1rem 3rem;
+  background-color: #e84118;
+  color: white;
+  font-weight: 700;
+  border: none;
+  width: 40%;
+  margin-top: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.btn-submit:hover{
+  background-color: #c74525;
+}
+.imagenes{
+  height: 25rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.card{
+  text-align: center;
+  border: 2px solid #e1e1e1;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+   .card{
+    text-align: center;
+    border: 2px solid #e1e1e1;
+    border-radius: .5rem;
+   }
+}
+.grid-container{
+  display: block;
+}
+@media (min-width: 768px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.btn-receta{
+  padding: 1rem 3rem;
+  background-color: rgb(230, 216, 28);
+  border: none;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .3s;
+  margin-bottom: 2rem;
+}
+.btn-receta:hover{
+  background-color: rgb(214, 185, 40);;
+}
+
+.modal{
+  position: fixed;
+  text-align: center;
+  /* background-color: rgba(22, 20, 20, 0.7); */
+  background-color: white;
+  top: 10%;
+  left: 0;
+  padding: 5rem 2rem;
+  width: auto;
+  color: black;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  z-index: 10;
+
+}
+@media (min-width: 768px) {
+  .modal{
+    position: fixed;
+    top: 5%;
+    left: 37%;
+    padding: 5rem;
+    height: auto;
+    width: 20rem;
+  
+   
+  }
+}
+.imagen-modal{
+  height: 10rem;
+  width: 10rem;
+  border-radius: .4rem;
+}
+@media (min-width: 768px) {
+  .imagen-modal{
+    height: 50%;
+    width: 100%;
+    border-radius: .4rem;
+  }
+}
+.btn-cerra-modal{
+  all: unset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 700;
+  font-size: 3rem;
+  color: red;
+  cursor: pointer;
+  margin: 0 .7rem;
+  transition: .3s;
+}
+.btn-cerra-modal:hover{
+  color: #c74525;
+}
+.instrucciones, .ingredientes{
+  font-size: 1.2rem;
+  font-weight: 700;
+  
+}
+.instrucciones span, .ingredientes span{
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+}
+#spanIngred{
+  text-align: left;
+  font-weight: 300;
+  font-size: .9rem;
+}
+/*Spinner*/
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.error{
+  padding: .5rem 2rem;
+  text-align: center;
+ 
+  color: red;
+  font-weight: 500;
+  width: 33%;
+  margin: 2rem auto;
+
+}
